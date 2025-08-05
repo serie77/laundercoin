@@ -149,9 +149,7 @@ body {
 .coin-img {
     width: 150px;
     height: 150px;
-    animation: float 3s ease-in-out infinite;
     filter: drop-shadow(0 0 20px rgba(255, 107, 107, 0.5));
-    border-radius: 50%;
 }
 
 @keyframes float {
@@ -354,12 +352,42 @@ body {
     color: var(--accent-color);
 }
 
+.how-it-works-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4rem;
+    align-items: center;
+}
+
 .steps-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+}
+
+.wash-gif-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wash-gif {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.wash-caption {
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 .step {
@@ -585,6 +613,11 @@ body {
 
     
 
+    
+    .how-it-works-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
     
     .steps-container {
         flex-direction: column;
